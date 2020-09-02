@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using System;
+ 
+namespace ejemplo
+{
+    class MainClass
+    {
+        public static void Main (string[] args)
+        {
+ 
+            int a = 6, b= 12;
+            int operacion = 0 ;
+            Console.Writeline("Ingrese operacion: ");
+            Console.Writeline("1. Resta ");
+            Console.Writeline("2. Suma ");
+            operacion = Console.ReadLine ();
+            if (operacion = 1  )
+            {
+                int operacion = f_restador (a,b); //llamada funcion resta
+                         
+            Console.WriteLine ("(Funcion) La Resta es "+2);
+ 
+            m_restador (a,b); //Llamada metodo resta
+            }
+           
+            if (operacion = 2 )
+            {
+                int operacion = f_sumador (a,b); //llamada funcion suma
+                         
+            Console.WriteLine ("(Funcion) La Suma es "+2);
+ 
+            m_sumador (a,b); //Llamada metodo suma 
+            }
+        }
+ 
+        //Declaracion Funcion R esta
+        public static int f_restador(int a, int b){
+ 
+            int resta = a - b;
+ 
+            return resta;
+ 
+        }
+ 
+        //Declaracion Metodo Resta
+        public static void m_restador(int a, int b){
+ 
+            Console.WriteLine ( "(Metodo) La resta es "+ (a-b) );
+
+
+            //Declaracion Funcion Suma 
+        public static int f_sumador(int a, int b){
+ 
+            int resta = a - b;
+ 
+            return suma;
+ 
+        }
+ 
+        //Declaracion Metodo Suma 
+        public static void m_sumador(int a, int b){
+ 
+            Console.WriteLine ( "(Metodo) La suma es "+ (a-b) );
+ 
+        }
+    }
+}
